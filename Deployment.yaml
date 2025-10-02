@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: origoss-hw-deployment
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: origoss-hw
+  template:
+    metadata:
+      labels:
+        app: origoss-hw
+    spec:
+      containers:
+      - name: origoss-hw
+        image: miluivits/origoss-homework:latest
+        ports:
+        - containerPort: 8080
