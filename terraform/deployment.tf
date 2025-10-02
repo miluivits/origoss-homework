@@ -1,4 +1,3 @@
-# terraform/deployment.tf
 resource "kubernetes_deployment" "origoss_hw" {
   metadata {
     name   = "origoss-hw-deployment"
