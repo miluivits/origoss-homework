@@ -1,0 +1,8 @@
+.git
+.gitignore
+terraform/
+*.tfstate
+*.tfstate.backup
+.vscode
+.DS_Store
+README.md
